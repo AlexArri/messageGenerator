@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Seed Generator</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="showHideFunction.js" defer></script>
+    <script src="generateList.js" defer></script>
+</head>
+
+<body>
+    <img src="bitcoin.png" alt="image of a bit coin">
+    <h1>Crypto Seed Generator</h1>
+    <div class="outerButtondiv">
+        <div class="innerButtonDiv"><button type="button" onclick="ShowAndHide()"> 12 word seed</button></div>
+        <div class="innerButtonDiv"> <button type="button" onclick="ShowAndHide()"> 18 word seed</button></div>
+        <div class="innerButtonDiv"><button type="button" onclick="ShowAndHide()"> 24 word seed</button></div>
+    </div>
+
+    <div id="hiddenTable" style="display:none">
+        <ul ></ul>// import list from generate list
+    </div>
+
+   
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+body {background-color: rgb(61, 62, 63);}
+h1 {columns: black; text-align: center;}
+h2 {color: black; text-align: center;}
+button {color: black; background-color: gold; float: left; padding: 10px; border-radius: 8px; border: 2px solid black; margin: 10px;}
+img {max-width: 20%; height: auto; display: block; margin-left: auto; margin-right: auto; margin-top: 10vh;}
+
+.outerButtonDiv{ width: 100%; text-align: left; background-color: aliceblue; }
+.innerButtondiv {display: inline-block;}
+
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+th, td{
+    padding: 10px 20px;
+    border: 1px solid #000;
+}
+
