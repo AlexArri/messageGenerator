@@ -1,18 +1,95 @@
-body {background-color: rgb(61, 62, 63);}
-h1 {columns: black; text-align: center;}
+body {
+    background-color: rgb(61, 62, 63); 
+    font-family: Lora, serif; 
+    font-size: 18px; 
+    height: 100%;
+}
+
+h1 {columns: black; text-align: center; font-size: 50px;}
 h2 {color: black; text-align: center;}
-button {color: black; background-color: gold; float: left; padding: 10px; border-radius: 8px; border: 2px solid black; margin: 10px;}
-img {max-width: 20%; height: auto; display: block; margin-left: auto; margin-right: auto; margin-top: 10vh;}
+img {max-width: 15%; height: auto; display: block; margin-left: auto; margin-right: auto; margin-top: 5vh;}
 
-.outerButtonDiv{ width: 100%; text-align: left; background-color: aliceblue; }
-.innerButtondiv {display: inline-block;}
-
-table{
-    border-collapse: collapse;
-    border-spacing: 0;
+button {
+  background-color: gold;
+  color: black;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  margin: 2px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  font-family: Lora, serif;
+  border-radius: 10px;
 }
-th, td{
-    padding: 10px 20px;
-    border: 1px solid #000;
+
+
+.innerButtonDiv{
+    box-shadow: 0 8px 16px 0 gold 0 6px 20px 0 gold;
+    margin: 20px;
+}
+.innerButtonDiv:hover {
+    box-shadow: 0 12px 50px 0 rgb(33, 33, 33), 0 17px 30px 0 rgb(33, 33, 33);
+  }
+.outerButtonDiv{ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
 }
 
+.list{
+font-size: 22px;
+border: 3px;
+background-color: aliceblue;
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+border-radius: 8px;
+width: 20%;
+}
+
+.buffer { clear: both; height: 110px; }
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100vw;
+    background-color: rgb(36, 36, 36);
+    color: white;
+    text-align: center;
+    height: 9vh;
+}
+
+a{
+    color: blue;
+}
+
+a:visited {
+    color: blue;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:hover {
+    color: gold;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  a:active {
+    color: gold;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+@media only screen and (max-width: 1200px){
+    .list{
+        width: 50%;
+    }
+    img{max-width: 35%; height: auto; display: block; margin-left: auto; margin-right: auto; margin-top: 5vh;}
+
+    }

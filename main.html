@@ -6,24 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crypto Seed Generator</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu|Lora">
     <script src="showHideFunction.js" defer></script>
-    <script src="generateList.js" defer></script>
+    <script  src="generateList.js" defer></script>
 </head>
 
 <body>
-    <img src="bitcoin.png" alt="image of a bit coin">
-    <h1>Crypto Seed Generator</h1>
-    <div class="outerButtondiv">
-        <div class="innerButtonDiv"><button type="button" onclick="ShowAndHide()"> 12 word seed</button></div>
-        <div class="innerButtonDiv"> <button type="button" onclick="ShowAndHide()"> 18 word seed</button></div>
-        <div class="innerButtonDiv"><button type="button" onclick="ShowAndHide()"> 24 word seed</button></div>
-    </div>
+        <img src="bitcoin.png" alt="image of a bit coin">
+        <h1>Crypto Seed Generator</h1>
+        <div class="outerButtonDiv">
+            <div id="seed12" class="innerButtonDiv"><button type="button" onclick="ShowAndHide();  twelveSeedGenerator()"> 12 word seed</button></div>
+            <div id="seed18" class="innerButtonDiv"> <button type="button" onclick="ShowAndHide();  eighteenSeedGenerator() "> 18 word seed</button></div>
+            <div id="seed24" class="innerButtonDiv"><button type="button" onclick="ShowAndHide();  twentFourSeedGenerator()"> 24 word seed</button></div>
+        </div>
 
-    <div id="hiddenTable" style="display:none">
-        <ul ></ul>// import list from generate list
-    </div>
+        <div id="hiddenTable" style="display:none">
+            <ol id="myItemList" class="list"></ol>
+        </div>
 
-   
+        <div class="buffer"></div>
+
+    <footer>
+        <p>Portfolio project created by Alex. &copy; Copyright 2022</p>
+        <p><small>Visit project at <a href="https://github.com/AlexArri/messageGenerator">my Github repositry</a></small></p>
+    </footer>
 </body>
 
 </html>
